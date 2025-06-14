@@ -1,0 +1,172 @@
+body {
+        background-color: #121212;
+        color: #ffffff;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .navbar {
+        background-color: #1e1e1e;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      .navbar-brand {
+        font-weight: bold;
+        color: #00bcd4;
+        font-size: 1.5rem;
+      }
+
+      .navbar-brand:hover {
+        color: #1de9b6;
+      }
+
+      .nav-link {
+        color: #ffffff !important;
+        transition: color 0.3s ease;
+      }
+
+      .nav-link:hover {
+        color: #00bcd4 !important;
+      }
+
+      .navbar-toggler {
+        border: none;
+      }
+
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 188, 212, 0.7%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+      }
+      .tech-slider {
+        background: #1e1e1e;
+        overflow: hidden;
+        padding: 30px 0;
+      }
+
+      .slider-track {
+        display: flex;
+        width: calc(200%); /* Wide enough to hold 2 full sets */
+        animation: scroll 40s linear infinite;
+      }
+
+      .slider-track::after {
+        content: "";
+        display: flex;
+      }
+
+      .slider-track img {
+        height: 60px;
+        margin: 0 30px;
+        vertical-align: middle;
+        transition: transform 0.3s ease;
+      }
+
+      .slider-track img:hover {
+        transform: scale(1.1);
+      }
+
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+      .lang-card {
+    background-color: #1e1e1e;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+  }
+  .lang-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    
+  }
+  .lang-logo {
+    height: 60px;
+    width: auto;
+  }
+  .lang-list li {
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+  }
+  .lang-list li::before {
+    content: "\f058";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 8px;
+    color: #0d6efd;
+  }
+  #nlp-section-unique {
+      max-width: 1200px;
+      margin: 50px auto;
+      background: linear-gradient(to right, #ff416c, #ff4b2b); /* Vibrant gradient */
+      color: #fff;
+      padding: 60px 30px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      border-radius: 30px; /* Rounded corners for the whole section */
+    }
+
+    #nlp-title-unique {
+      font-size: 40px;
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    #nlp-desc-unique {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 40px;
+      line-height: 1.7;
+    }
+
+    #nlp-topics-unique {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 40px;
+    }
+
+    .nlp-topic-pill {
+      background-color: rgba(255, 255, 255, 0.15);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 16px;
+      transition: background 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nlp-topic-pill:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    #nlp-github-link {
+      text-align: center;
+    }
+
+    #nlp-github-link a {
+      background-color: #ffffff;
+      color: #ff416c;
+      padding: 12px 28px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    #nlp-github-link a:hover {
+      background-color: #ff4b2b;
+      color: white;
+    }
+    .skill-hover {
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .skill-hover:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }

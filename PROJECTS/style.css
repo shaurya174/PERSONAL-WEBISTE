@@ -1,0 +1,54 @@
+body {
+  background: #0d0d0d;
+  color: #f1f1f1;
+  font-family: "Poppins", sans-serif;
+}
+nav.navbar {
+  background-color: #111;
+}
+.project-card {
+  background: #1a1a1a;
+  border-radius: 15px;
+  padding: 20px;
+  transition: all 0.4s ease;
+}
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.1);
+}
+.tag {
+  display: inline-flex;
+  align-items: center;
+  background: #222;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  margin: 2px;
+}
+.tag img {
+  height: 18px;
+  width: 18px;
+  margin-right: 6px;
+}
+.project-img {
+  border-radius: 12px;
+  max-height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.img-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #111;
+  margin-top: 50px;
+}
+.btn-custom {
+  margin-right: 10px;
+}

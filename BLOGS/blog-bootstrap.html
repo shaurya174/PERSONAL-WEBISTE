@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- same head as blog-nodejs.html -->
+   <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Benefits of Using Node.js | Shaurya Mittal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: 'Segoe UI', sans-serif;
+      transition: background-color 0.4s, color 0.4s;
+      padding-bottom: 60px;
+    }
+    body.light-mode {
+      background-color: #f0f0f0;
+      color: #222;
+    }
+    .navbar {
+      background-color: #161b22;
+      transition: background-color 0.4s;
+    }
+    body.light-mode .navbar {
+      background-color: #e3e3e3;
+    }
+    .navbar-brand, .nav-link {
+      color: #58a6ff !important;
+      transition: color 0.4s;
+    }
+    body.light-mode .navbar-brand,
+    body.light-mode .nav-link {
+      color: #0d1117 !important;
+    }
+    .nav-link:hover {
+      color: #1fb6ff !important;
+    }
+    .btn-darkmode-toggle {
+      background: none;
+      border: none;
+      color: #58a6ff;
+      font-size: 1.3rem;
+      cursor: pointer;
+      transition: color 0.4s;
+    }
+    body.light-mode .btn-darkmode-toggle {
+      color: #0d1117;
+    }
+    .content {
+      max-width: 720px;
+      margin: 40px auto 80px;
+      padding: 0 15px;
+    }
+    h1 {
+      color: #58a6ff;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    h2 {
+      color: #1fb6ff;
+      margin-top: 35px;
+      margin-bottom: 15px;
+    }
+    a.more-info {
+      color: #58a6ff;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      margin-top: 25px;
+    }
+    a.more-info:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      margin: 50px 0 30px;
+      font-size: 0.9rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #161b22;
+      color: #58a6ff;
+      transition: background-color 0.4s;
+      padding: 10px 0;
+    }
+    body.light-mode footer {
+      background-color: #e3e3e3;
+      color: #0d1117;
+    }
+  </style>
+</head>
+</head>
+<body>
+  <!-- same navbar as blog-nodejs.html -->
+    <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Shaurya Mittal Blogs</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav me-3">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+        <button class="btn-darkmode-toggle" aria-label="Toggle dark/light mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="content">
+    <h1>Reasons I Choose Bootstrap</h1>
+
+    <h2>Contents:</h2>
+    <ul>
+      <li><a href="#why-bootstrap">Why Bootstrap?</a></li>
+      <li><a href="#benefits">Benefits of Bootstrap</a></li>
+      <li><a href="#getting-started">Getting Started with Bootstrap</a></li>
+    </ul>
+
+    <h2 id="why-bootstrap">Why Bootstrap?</h2>
+    <p>Bootstrap provides a simple way to build responsive, mobile-first websites with pre-designed components and utilities.</p>
+
+    <h2 id="benefits">Benefits of Bootstrap</h2>
+    <ul>
+      <li>Responsive grid system</li>
+      <li>Easy to customize</li>
+      <li>Consistent design across browsers</li>
+      <li>Huge community and support</li>
+    </ul>
+
+    <h2 id="getting-started">Getting Started with Bootstrap</h2>
+    <p>You can include Bootstrap via CDN or download it locally. It integrates easily with many frontend workflows.</p>
+
+    <a href="https://getbootstrap.com/" class="more-info">More Info</a> |
+    <a href="blogs.html">Back to Blog</a>
+  </div>
+
+  <footer>
+    <a href="index.html">© 2025 Shaurya Mittal</a>
+  </footer>
+
+  <script>
+    const toggleBtn = document.querySelector('.btn-darkmode-toggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+    });
+  </script>
+</body>
+</html>
